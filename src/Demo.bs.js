@@ -2,6 +2,16 @@
 'use strict';
 
 
-console.log("Hello, World!");
+var licenseNumber;
 
+if (licenseNumber !== undefined) {
+  console.log(licenseNumber.toString());
+} else {
+  console.log("no car");
+}
+
+var personHasACar = false;
+
+exports.personHasACar = personHasACar;
+exports.licenseNumber = licenseNumber;
 /*  Not a pure module */
